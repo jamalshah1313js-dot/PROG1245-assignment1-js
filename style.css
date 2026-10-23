@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5ef;
+    color: #263b2c;
+
+}
+
+h1 {
+    color: #26734d;
+    font-size: 36px;
+
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #202020
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    color: #f0b429
+}
+
+
+.hero {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin: 20px 0;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  
+
+}
+
+.hero-text {
+    max-width: 600px;
+
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #f0b429;
+    color: #202020;
+    padding: 14px 22px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+   
+}
+
+.hero-button:hover {
+    background-color: white;
+}
+
+
+#inventory img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+
+}
+
+aside {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    background-color: #ffffff;
+
+}
+
+
+aside li {
+    margin-bottom: 15px;
+}
+
+
+main  {
+    flex: 3;
+    min-width: 0;
+    padding: 20px;
+
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+#inventory,
+#lease,
+#rent,
+#contact {
+    padding: 25px;
+    margin: 20px 0;
+    background-color: white;
+
+}
+
+footer {
+    padding: 25px;
+    margin-top: 20px;
+    background-color: #202020;
+    color: white;
+    text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside,
+    main {
+        width: 100%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+}
